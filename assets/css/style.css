@@ -504,17 +504,18 @@ a {
   border-radius: 16px;
 }
 
-.features .image img:first-child {
-  margin-right: 30px;
-  margin-top: 34px;
-}
-
-.features .image img:last-child {
+.features .image {
   padding-right: 10px;
 }
 
+.features .image .low {
+  margin-right: 30px;
+  margin-top: 34px;
+  padding-right: -10px;
+}
+
 .features .content {
-  width: 470px;
+  width: 41%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -533,4 +534,24 @@ a {
   margin-top: 32px;
   min-width: 137px;
   background: var(--primary-color);
+}
+
+/*features -2nd*/
+.features-2nd {
+  margin-top: 70px;
+}
+
+.features-2nd .body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.features-2nd .image img {
+  margin-top: 0;
+  width: 470px;
+  height: 440px;
+}
+
+.features-2nd .content {
+  width: 49%;
 }
