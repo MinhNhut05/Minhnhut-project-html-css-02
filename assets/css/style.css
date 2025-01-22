@@ -63,6 +63,13 @@ a {
   font-size: 3.8rem;
 }
 
+.heading.lv3 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
 .desc {
   color: #5f5b53;
   margin-top: 22px;
@@ -565,7 +572,8 @@ a {
 /* =========blog======== */
 
 .blog {
-  margin-top: 135px;
+  padding: 65px 0;
+  margin-top: 70px;
 }
 
 .blog .blog-header {
@@ -676,4 +684,79 @@ a {
   border-radius: 6px;
   background: var(--primary-color);
   cursor: default;
+}
+
+/* =======footer======= */
+
+.footer {
+  margin-top: 31px;
+  padding-top: 96px;
+  background-color: #2e2100;
+}
+
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+  width: 21.6%;
+}
+
+.footer .row .column:nth-child(1) {
+  width: 35%;
+}
+
+.footer .footer-social {
+  display: flex;
+  margin-top: 18px;
+  gap: 18px;
+}
+
+.footer .column .desc {
+  width: 65%;
+  color: #bfbcb2;
+}
+
+.footer .column .heading {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.footer .column .heading::after {
+  position: absolute;
+  content: "";
+  background: #59554b;
+  bottom: 0px;
+  right: -27px;
+  left: 0;
+  width: 130px;
+  height: 1px;
+}
+
+.footer .column .list {
+  padding-top: 28px;
+}
+
+.footer .list li {
+  margin-top: 12px;
+}
+
+.footer .list li:first-child {
+  margin-top: 0px;
+}
+
+.footer .list strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer .copyright {
+  padding-bottom: 28px;
+}
+
+.footer .copyright .desc {
+  color: #807d74;
+  text-align: center;
 }
